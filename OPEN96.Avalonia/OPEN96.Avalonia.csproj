@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Title>OPEN96.Avalonia</Title>
+        <Description>OPEN96.Avalonia</Description>
+        <Copyright>OPEN96</Copyright>
+        <PackageProjectUrl>https://github.com/OPEN96/OPEN96.Avalonia</PackageProjectUrl>
+        <PackageLicenseUrl>https://github.com/OPEN96/OPEN96.Avalonia</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/OPEN96/OPEN96.Avalonia.git</RepositoryUrl>
+        <AssemblyVersion>1.0.0</AssemblyVersion>
+        <FileVersion>1.0.0</FileVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Avalonia" Version="11.2.5" />
+    </ItemGroup>
+
+</Project>
