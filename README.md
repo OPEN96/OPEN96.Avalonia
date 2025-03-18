@@ -1,5 +1,5 @@
 # OPEN96.Avalonia
 
-## йсм╪╤╗н╩фВ
+## Х╖├Е⌡╬Е╝ Д╫█Е≥╗
 
 https://docs.avaloniaui.net/zh-Hans/docs/concepts/view-locator
