@@ -1,0 +1,39 @@
+﻿<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:controls="using:OPEN96.Avalonia.Controls">
+    <Design.PreviewWith>
+        <controls:ImageButton Text="按钮" Source="/Assets/avalonia-logo.ico" />
+    </Design.PreviewWith>
+
+    <Style Selector="controls|ImageButton">
+        <!-- Set Defaults -->
+        <Setter Property="Template">
+            <ControlTemplate>
+                <StackPanel Width="64" Height="64" Orientation="Vertical">
+                    <Image Width="45" Height="45" Source="{TemplateBinding Source}" />
+                    <TextBlock Foreground="{TemplateBinding Foreground}" HorizontalAlignment="Center"
+                               Text="{TemplateBinding  Text}" />
+                </StackPanel>
+            </ControlTemplate>
+        </Setter>
+        <Style Selector="^ /template/ Image">
+            <Setter Property="Transitions">
+                <Transitions>
+                    <TransformOperationsTransition Property="RenderTransform" Duration="0:0:.075" />
+                </Transitions>
+            </Setter>
+        </Style>
+        <Style Selector="^:pointerover">
+            <Style Selector="^ /template/ Image">
+                <Setter Property="Opacity" Value="0.8" />
+            </Style>
+        </Style>
+        <Style Selector="^:pressed">
+            <Style Selector="^ /template/ Image">
+                <Setter Property="RenderTransform">
+                    <ScaleTransform ScaleX="0.8" ScaleY="0.8" />
+                </Setter>
+            </Style>
+        </Style>
+    </Style>
+</Styles>

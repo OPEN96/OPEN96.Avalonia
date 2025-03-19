@@ -11,11 +11,18 @@
         <PackageProjectUrl>https://github.com/OPEN96/OPEN96.Avalonia</PackageProjectUrl>
         <PackageLicenseUrl>https://github.com/OPEN96/OPEN96.Avalonia</PackageLicenseUrl>
         <RepositoryUrl>https://github.com/OPEN96/OPEN96.Avalonia.git</RepositoryUrl>
-        <AssemblyVersion>1.0.0</AssemblyVersion>
-        <FileVersion>1.0.0</FileVersion>
+        <AssemblyVersion>1.0.0.1</AssemblyVersion>
+        <FileVersion>1.0.0.1</FileVersion>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <PackageReleaseNotes>OPEN96.Avalonia</PackageReleaseNotes>
         <PackageTags>OPEN96.Avalonia</PackageTags>
+        <Version>1.0.0.1</Version>
+    </PropertyGroup>
+
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+      <DebugSymbols>true</DebugSymbols>
+      <DebugType>full</DebugType>
+      <DocumentationFile>bin\Release\OPEN96.Avalonia.xml</DocumentationFile>
     </PropertyGroup>
 
     <ItemGroup>
@@ -30,7 +37,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Controls\" />
+      <AvaloniaResource Include="Assets\avalonia-logo.ico" />
     </ItemGroup>
 
 </Project>

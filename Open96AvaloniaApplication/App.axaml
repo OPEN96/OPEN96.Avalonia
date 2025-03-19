@@ -11,5 +11,6 @@
   
     <Application.Styles>
         <FluentTheme />
+        <StyleInclude Source="avares://OPEN96.Avalonia/Themes/Open96Styles.axaml"/>
     </Application.Styles>
 </Application>

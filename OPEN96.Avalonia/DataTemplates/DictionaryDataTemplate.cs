@@ -34,12 +34,13 @@ namespace OPEN96.Avalonia.DataTemplates
             {
                 throw new ArgumentNullException(nameof(param));
             }
+
             // 查找并构建
             return AvailableTemplates[key].Build(param)!;
         }
 
         /// <summary>
-        /// 检查我们是否可以接受提供的数据
+        /// 检查是否可以接受提供的数据
         /// </summary>
         /// <param name="data"></param>
         /// <returns></returns>
@@ -47,9 +48,9 @@ namespace OPEN96.Avalonia.DataTemplates
         {
             var key = data?.ToString();
 
-            return  // data is xxType && // 判断是否属于某类型        
-                   !string.IsNullOrEmpty(key)
-                   && AvailableTemplates.ContainsKey(key);
+            return // data is xxType && // 判断是否属于某类型        
+                !string.IsNullOrEmpty(key)
+                && AvailableTemplates.ContainsKey(key);
         }
     }
 }
